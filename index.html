@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>MetaSCUT: Large-Scale Scene Simulation based on 3D Gaussian Splatting and Universal Physics Engine</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    .video-container {
+      padding: 10px;  /* 视频容器内边距 */
+    }
+    
+    .video-wrapper {
+      max-width: 100%;  /* 最大宽度 */
+      height: auto;     /* 自动高度 */
+    }
+  </style>
+
+<style>
+  @media (max-width: 768px) {
+    #results-carousel {
+      flex-direction: column; /* 在小屏幕上垂直排列 */
+    }
+  }
+</style>
+
+<style>
+  .video-container {
+    padding: 10px;
+    margin: 0 auto;  /* 居中显示 */
+  }
+  
+  .video-wrapper {
+    max-width: 120%;  /* 增加最大宽度 */
+    height: auto;
+  }
+  
+  /* 增加容器宽度 */
+  .hero.teaser .container {
+    max-width: 1200px !important;  /* 覆盖默认宽度 */
+  }
+</style>
+
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MetaSCUT: Large-Scale Scene Simulation based on 3D Gaussian Splatting and Universal Physics Engine</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhenyu Sun</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Ye Pang</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Sitong Wang</a><sup>*</sup>,</span>
+                    <span class="author-block">
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Zihao Chen</a><sup>*</sup>,</span>
+                      <span class="author-block">
+                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Chengkai Wang</a><sup>*</sup>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">School of Future Technology, South China University of Technology<br>1st Semester 2024-2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Paper link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Overview Section -->
+    <div class="columns is-centered is-vcentered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
+        <figure class="image is-16by9">
+          <img src="static/images/overview.png" alt="MY ALT TEXT"/>
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            In the fields of digital twins and virtual reality, the accurate reconstruction and interaction of large-scale scenes have become key research focuses. In this paper, we present a digital twin reconstruction of a campus and implement interactive features within the reconstructed scene. For the campus reconstruction, we utilized a self-collected aerial dataset, with each building in the campus divided into several zones, each containing hundreds of multi-view images. We experimented with two mesh reconstruction methods: the first method is based on Gaussian scattering for mesh extraction, where we introduced a regularization term to align the Gaussian model with the scene's surface and used Poisson reconstruction to efficiently extract an accurate mesh. The second method is inspired by divide-and-conquer training approaches based on Gaussian primitives, along with a multi-level detail strategy. Ultimately, we found that the first method outperformed the second. For the interactive component, we primarily used Blender to implement interactive features, such as a physics-simulated vehicle in the virtual campus. Additionally, we explored the use of the Genesis physics simulation engine to control the movement of multiple robotic arms. However, due to Genesis being in its early development stage and its inability to load scenes, we were unable to integrate it into our virtual campus. In conclusion, we have developed an explorative campus scene that integrates large-scale reconstruction with interactive features, offering a novel solution for the precise reconstruction and interaction within large-scale environments.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pipeline Section -->
+    <div class="columns is-centered is-vcentered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Pipeline</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pipeline of our MetaSCUT, which integrates dataset analysis, SuGar-based mesh reconstruction, and Blender-assisted scene rendering. The process begins with aerial data acquisition, including denoising, alignment, and parameter adjustment, to generate an initial point cloud and camera parameters. SuGar mesh reconstruction involves five key steps: generating initial Gaussian representations, optimizing the Gaussians with regularization terms, extracting the mesh using density functions and Poisson reconstruction, refining and binding the mesh, and rendering the scene. Finally, the output mesh is enriched in Blender with Gaussian-based textures, material adjustments, and is exported as static images or videos.
+          </p>
+        </div>
+        <figure class="image is-16by9">
+          <img src="static/images/pipeline.png" alt="MY ALT TEXT"/>
+        </figure>
+      </div>
+    </div>
+  
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Quantitative Comparison</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/table.png" alt="MY ALT TEXT" style="width: 1200px; height: 300px; margin: 0 auto; display: block;"/>
+          <div class="content has-text-justified">
+            <p>
+              We evaluate the CityGS, SuGaR, and the fine-tuned SuGaR on Rendering Quality aspects, including PSNR, SSIM and LPIPS. With the proper hyper-parameter settings, Sugar module outperforms the vanilla version and CityGS on rendering quality, while producing 3D reconstruction results with less artifacts and empty holes, laying a solid foundation for subsequent simulated interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video section with three videos -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3" style="margin-top: 30px;">Reconstruction Demo</h2>
+
+      <!-- Video 1 -->
+      <div class="video-item" style="margin-bottom: 20px;">
+        <video poster="" id="video1" autoplay controls muted loop height="100%" style="width: 100%;">
+          <source src="static/videos/main.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-item" style="margin-bottom: 20px;">
+        <video poster="" id="video2" autoplay controls muted loop height="100%" style="width: 100%;">
+          <source src="static/videos/move1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-item" style="margin-bottom: 20px;">
+        <video poster="" id="video3" autoplay controls muted loop height="100%" style="width: 100%;">
+          <source src="static/videos/move2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End teaser video section -->
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Interaction Demo</h2>
+      <div id="results-carousel" class="carousel results-carousel" style="display: flex; gap: 10px;">
+        <div class="item item-video1" style="flex: 1;">
+          <video poster="" id="video1" autoplay controls muted loop height="100%" style="width: 100%;">
+            <!-- Your video file here -->
+            <source src="static/videos/display1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2" style="flex: 1;">
+          <video poster="" id="video2" autoplay controls muted loop height="100%" style="width: 100%;">
+            <!-- Your video file here -->
+            <source src="static/videos/display2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3" style="flex: 1;">
+          <video poster="" id="video3" autoplay controls muted loop height="100%" style="width: 100%;">
+            <!-- Your video file here -->
+            <source src="static/videos/display3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<!-- References Section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">References</h2>
+        <div class="content has-text-left">
+          <p>
+            Guédon, A., & Lepetit, V. (2024). SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction and High-Quality Mesh Rendering. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). <br><br>
+            Liu, Y., Guan, H., Luo, C., Fan, L., Peng, J., & Zhang, Z. (2024). CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians. Proceedings of the European Conference on Computer Vision (ECCV). <br><br>
+            Kerbl, B., Kopanas, G., Leimkühler, T., & Drettakis, G. (2023). 3D Gaussian Splatting for Real-time Radiance Field Rendering. ACM Transactions on Graphics, 42(4), 1-14.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End References Section -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
